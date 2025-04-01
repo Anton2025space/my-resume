@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.header {
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 10% 10% 10% 10% 10%;
+  background-color: #ffffff;
+}
+.logo {
+  margin: 5% 0 3% 5%;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.nav {
+  display: grid;
+  grid-row: 0/1;
+  grid-column: 3/7;
+  margin: 5% 0 3% 5%;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  gap: 5px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover {
+  color: rgb(56, 71, 207);
+}
+.home {
+  grid-column: 3/4;
+}
+.about {
+  grid-column: 4/5;
+}
+.cv {
+  grid-column: 5/6;
+}
+.contact {
+  grid-column: 6/7;
+}
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+/* End Header */
+/* Main */
+.main {
+  width: 80%;
+  height: 90%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 25% 25% 50%;
+  gap: 5%;
+  font-family: "Roboto", sans-serif;
+}
+.main p {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  color: rgb(56, 71, 207);
+
+  margin: 5%;
+}
+.main P:hover {
+  color: #fff;
+}
+.photo {
+  grid-row: 2/6;
+  grid-column: 3/4;
+}
+.photo img {
+  width: 80%;
+  height: 100%; /* Растягивает по высоте, но с учетом `object-fit` */
+  object-fit: scale-down; /* Обрезает изображение, но сохраняет пропорции */
+  margin-right: 20%;
+  align-self: self-end;
+}
+.main_title {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  width: 80%;
+  height: 40%;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: end;
+  color: rgb(56, 71, 207);
+  background-color: white;
+}
+.create_web {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 80%;
+  color: white;
+}
+.graphic_design {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 80%;
+  color: white;
+}
+.full_stack_development {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  width: 80%;
+  color: white;
+}
+.texts {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  width: 80%;
+  color: white;
+}
+.translation {
+  display: grid;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  width: 80%;
+  color: white;
+}
+.seo {
+  display: grid;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  width: 80%;
+  color: white;
+}
+.programming {
+  display: grid;
+  grid-row: 5/6;
+  grid-column: 1/2;
+  width: 80%;
+  color: white;
+}
+.certificates {
+  display: grid;
+  grid-row: 5/6;
+  grid-column: 2/3;
+  width: 80%;
+  color: white;
+}
+/* End Main */
+
+/* Footer */
+.footer {
+  width: 80%;
+  height: 100px;
+  margin-left: 10%;
+  background-color: #ffffff;
+  display: grid;
+  margin-top: 250px;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+.copyright {
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.social {
+  width: 60%;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.social a {
+  display: flex;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+/*Делаем анимацию*/
+/* Скрываем оверлей по умолчанию */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(56, 71, 207); /* Голубой фон */
+  opacity: 0;
+  visibility: collapse;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  color: white;
+}
+
+/* Делаем родительский div относительным, чтобы оверлей занимал всю его площадь */
+.create_web,
+.graphic_design,
+.full_stack_development,
+.texts,
+.translation,
+.seo,
+.programming,
+.certificates {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 150px; /* Высота блока (можешь поменять) */
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
+  font-family: "Script Dancing";
+  text-decoration: none;
+}
+
+/* При наведении на p показываем overlay */
+.overlay-trigger:hover + .overlay {
+  opacity: 1;
+  visibility: visible;
+  z-index: -1;
+  color: #fff;
+}
+/* Стили для ссылки */
+.overlay a {
+  color: rgb(56, 71, 207);
+  font-size: 18px;
+  text-decoration: none;
+  background: rgb(56, 71, 207);
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Чтобы ссылка работала, но не мешала эффекту появления */
+.overlay a:hover {
+  background: rgb(56, 71, 207);
+  width: 100%;
+  height: auto;
+}
+.main a {
+  text-decoration: none;
+}
+.main a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1070px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 10%;
+  }
+  .create_web,
+  .graphic_design,
+  .full_stack_development,
+  .texts,
+  .translation,
+  .seo,
+  .programming,
+  .certificates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 80%;
+    width: 30px;
+    height: 30px;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 50%;
+    order: 1;
+  }
+  .footer .copyright {
+    flex-basis: 80%; /* Заставляет копирайт занимать всю ширину при узком экране */
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+    order: 2; /* Перемещает копирайт вниз */
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .social {
+    display: flex;
+
+    width: 100%;
+    flex-direction: row;
+    margin-top: -10px;
+    margin-left: -7%;
+    padding-bottom: 50px;
+  }
+  .copyright {
+    display: block;
+    margin-top: 150px;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+}

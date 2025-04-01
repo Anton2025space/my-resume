@@ -1,0 +1,54 @@
+.contact_me {
+  width: 40%;
+  height: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  background-color: grey;
+}
+.contact_me h2 {
+  display: block;
+  margin-top: 25%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  color: rgb(56, 71, 207);
+  background-color: grey;
+}
+input {
+  display: block;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: rgb(56, 71, 207);
+  border-radius: 15px;
+}
+textarea {
+  display: block;
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 20%;
+  font-family: "Roboto", sans-serif;
+  height: 100px;
+  font-size: 1rem;
+  color: rgb(56, 71, 207);
+}
+button {
+  display: block;
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 35%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: rgb(56, 71, 207);
+  background-color: white;
+  border-radius: 15px;
+}
