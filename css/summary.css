@@ -1,0 +1,54 @@
+/* Menu_EXTRA*/
+
+.container {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+}
+.menu_extra {
+  width: 80%;
+  margin-left: 10%;
+  display: grid;
+  grid-template-rows: 20% 20%;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-family: 'Dancing Script';
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3;
+}
+.menu_extra span {
+  display: block;
+  text-decoration: none;
+}
+menu_extra a {
+  text-decoration: none;
+}
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}
+.main_summary {
+  width: 80%;
+  margin-left: 10%;
+  font-family: 'Dancing Script';
+  font-size: 1.5rem;
+}
+.my_get_certificates {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+.my_get_certificates img {
+  width: 80%;
+  display: block;
+  margin-top: 5%;
+}
+.my_get_certificates h2 {
+  font-family: 'Dancing Script';
+  font-size: 1.5rem;
+  display: grid;
+  grid-area: 0/0/2/1;
+}

@@ -14,7 +14,7 @@
 }
 .logo {
   margin: 5% 0 3% 5%;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 2rem;
 }
 .nav {
@@ -22,7 +22,7 @@
   grid-row: 0/1;
   grid-column: 3/7;
   margin: 5% 0 3% 5%;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   gap: 5px;
 }
@@ -60,10 +60,10 @@
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-columns: 25% 25% 50%;
   gap: 5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .main p {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   color: rgb(56, 71, 207);
 
@@ -89,7 +89,7 @@
   grid-column: 1/4;
   width: 80%;
   height: 40%;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 2rem;
   justify-content: center;
   align-items: end;
@@ -168,14 +168,14 @@
 }
 .copyright {
   margin-top: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
 }
 .social {
   width: 60%;
   margin-top: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: space-between;
 }
@@ -200,7 +200,7 @@
   visibility: collapse;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1;
-  font-family: "Dancing Script";
+  font-family: 'Dancing Script';
   font-size: 2rem;
   color: white;
 }
@@ -223,7 +223,7 @@
   cursor: pointer;
   overflow: hidden;
   color: white;
-  font-family: "Script Dancing";
+  font-family: 'Script Dancing';
   text-decoration: none;
 }
 
@@ -256,6 +256,7 @@
 .main a:hover {
   color: #fff;
 }
+
 
 @media (max-width: 1070px) {
   .nav {
