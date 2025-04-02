@@ -14,7 +14,7 @@
   font-family: 'Dancing Script';
   text-decoration: none;
   font-size: 2rem;
-  line-height: 3;
+  line-height: 5;
 }
 .menu_extra span {
   display: block;
@@ -51,4 +51,9 @@ a:-webkit-any-link {
   font-size: 1.5rem;
   display: grid;
   grid-area: 0/0/2/1;
+}
+
+span a:hover {
+  background-color: rgb(56, 71, 207);
+  color: white;
 }
